@@ -1,0 +1,1371 @@
+{
+  "settings": {
+    "name": "עוף בגריל",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#f79300",
+        "secondaryColor": "#000000",
+        "successColor": "#f79300",
+        "infoColor": "#ffffff",
+        "warningColor": "#232323",
+        "dangerColor": "#f79300",
+        "mainFont": "Inter Tight",
+        "display1Font": "Assistant",
+        "display1Size": "6.6",
+        "display2Font": "Assistant",
+        "display2Size": "4.8",
+        "display5Font": "Assistant",
+        "display5Size": "2",
+        "display7Font": "Assistant",
+        "display7Size": "1.3",
+        "display4Font": "Assistant",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#ff8b43",
+        "#f79300",
+        "#111111",
+        "#e7272d",
+        "#131313"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.18",
+    "siteFonts": [
+      {
+        "css": "'Assistant', sans-serif",
+        "name": "Assistant",
+        "url": "https://fonts.googleapis.com/css?family=Assistant:200,300,400,500,600,700,800"
+      }
+    ],
+    "mcSmartCart": {
+      "currency": "USD"
+    },
+    "chatbutton": {},
+    "favicon": false,
+    "mbrsiteDomain": "gthhntzvtu",
+    "imageResize": false,
+    "usedWebp": false,
+    "cssOptimize": false,
+    "lazyLoad": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "pwa-switcher": false,
+    "uniqCompNum": 19,
+    "versionPublish": "6.0.1",
+    "screenshot": "screenshot.png",
+    "publishChangesOnly": true
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "עוף בגריל | עוף בגריל בבאר שבע | עוף בגריל בביג | עוף בגריל בביג בבאר שבע",
+        "meta_descr": "עוף בגריל | עוף בגריל בבאר שבע | עוף בגריל בביג | עוף בגריל בביג בבאר שבע\n\nמחפשים אוכל מוכן לשבת או ארוחת צהריים ביתית בבאר שבע? אצלנו תמצאו מנות בשריות חמות, שיפודים על האש, עוף בגריל, קציצות, קוסקוס, תוספות וסלטים ביתיים - בטעם של סבתא! מסעדה כשרה, משלוחים לכל אזור הדרום כולל ביג, תחנה מרכזית, רמות והאוניברסיטה. מתאים לשישי, שבת, שבעה, אירועים קטנים, ואירוח משפחתי. תפריט מגוון, אוכל טרי, שירות חם, מחירים משתלמים – פשוט להגיע או להזמין בווטסאפ.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@sticky)": {
+              ".navbar-dropdown": {
+                "position": "relative !important"
+              },
+              "& when (@transparent)": {
+                ".navbar-dropdown": {
+                  "position": "absolute !important"
+                }
+              }
+            },
+            "& when (@sticky)": {
+              "z-index": "1000",
+              "width": "100%",
+              "& when not (@transparent)": {
+                "position": "relative",
+                "min-height": "60px"
+              },
+              "nav.navbar": {
+                "position": "fixed"
+              }
+            },
+            "& when (@collapsed)": {
+              "@media (min-width: 992px)": {
+                ".nav-dropdown": {
+                  "margin-top": "2rem",
+                  "padding-bottom": "1rem"
+                }
+              }
+            },
+            ".navbar": {
+              "min-height": "140px",
+              "transition": "all 0.3s",
+              "border-bottom": "1px solid transparent",
+              "&:not(.\n  )": {},
+              "& when not (@transparent)": {
+                "background": "@menuBgColor"
+              },
+              "& when (@transparent)": {
+                "position": "absolute",
+                "background": "rgba(red(@menuBgColor), green(@menuBgColor), blue(@menuBgColor), @opacity)"
+              },
+              "&.opened": {
+                "transition": "all 0.3s"
+              },
+              ".dropdown-item": {
+                "padding": "0.5rem 1.8rem"
+              },
+              ".navbar-logo img": {
+                "width": "auto"
+              },
+              ".navbar-collapse": {
+                "justify-content": "flex-end",
+                "z-index": "1"
+              },
+              "&.collapsed": {
+                "justify-content": "center",
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  },
+                  "@media (min-width: 992px)": {
+                    "&:not(.navbar-short) .navbar-collapse when (@showLogo)": {
+                      "max-height": "~\"calc(98.5vh - @{logoSize}rem)\""
+                    }
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "41%"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem",
+                  "text-align": "center"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-right": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".nav-item .nav-link::before": {
+                  "display": "none"
+                },
+                "&.opened": {
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  },
+                  ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                    "margin-left": "0.5rem",
+                    "margin-top": "0.2rem",
+                    "border-top": "0.35em solid",
+                    "border-right": "0.35em solid transparent",
+                    "border-left": "0.35em solid transparent",
+                    "border-bottom": "0",
+                    "top": "40%"
+                  }
+                },
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3rem !important"
+                  }
+                },
+                "ul.navbar-nav": {
+                  "li": {
+                    "margin": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": "0.25rem 1.5rem !important",
+                  "text-align": "center"
+                },
+                ".navbar-brand": {
+                  "flex-shrink": "initial",
+                  "flex-basis": "auto",
+                  "word-break": "break-word",
+                  "padding-right": "2rem",
+                  "@media (max-width: 767px)": {
+                    "width": "~\"calc(100% - 31px)\""
+                  }
+                },
+                ".navbar-toggler": {
+                  "flex-basis": "auto"
+                },
+                ".icons-menu": {
+                  "padding-left": "0",
+                  "padding-top": "0.5rem",
+                  "padding-bottom": "0.5rem"
+                }
+              },
+              "&.navbar-short": {
+                "min-height": "60px",
+                ".navbar-logo": {
+                  "img": {
+                    "height": "3rem !important"
+                  }
+                },
+                ".navbar-brand": {
+                  "min-height": "60px",
+                  "padding": "0"
+                }
+              }
+            },
+            ".navbar-logo": {
+              "margin": "0"
+            },
+            ".container, .container-fluid": {
+              "justify-content": "flex-end",
+              "min-height": "100px",
+              "@media (max-width: 767px)": {
+                "justify-content": "space-between"
+              }
+            },
+            ".navbar-brand": {
+              "margin": "auto !important",
+              "position": "absolute",
+              "width": "200px",
+              "flex-direction": "column",
+              "top": "-5px",
+              "left": "50%",
+              "right": "50%",
+              "transform": "translateX(-50%)",
+              "min-height": "70px",
+              "flex-shrink": "0",
+              "align-items": "center",
+              "margin-right": "0",
+              "padding": "0 !important",
+              "transition": "all 0.3s",
+              "word-break": "break-word",
+              "z-index": "1",
+              ".navbar-caption": {
+                "line-height": "inherit !important"
+              },
+              ".navbar-logo a": {
+                "outline": "none",
+                "margin-bottom": "0.5rem"
+              },
+              "@media (max-width: 767px)": {
+                "display": "none"
+              }
+            },
+            ".dropdown-item:before": {
+              "font-family": "Moririse2 !important",
+              "content": "\"\\e966\"",
+              "display": "inline-block",
+              "width": "0",
+              "position": "absolute",
+              "left": "1rem",
+              "top": "0.5rem",
+              "margin-right": "0.5rem",
+              "line-height": "1",
+              "font-size": "inherit",
+              "vertical-align": "middle",
+              "text-align": "center",
+              "overflow": "hidden",
+              "transform": "scale(0, 1)",
+              "transition": "all 0.25s ease-in-out"
+            },
+            ".dropdown-menu": {
+              "padding": "0",
+              "border-radius": "4px",
+              "box-shadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1)"
+            },
+            ".dropdown-item": {
+              "border-bottom": "1px solid #e6e6e6",
+              "&:hover, &:focus": {
+                "background": "@primaryColor !important",
+                "color": "white !important"
+              },
+              "&:hover span": {
+                "color": "white"
+              },
+              "&:first-child": {
+                "border-top-left-radius": "4px",
+                "border-top-right-radius": "4px"
+              },
+              "&:last-child": {
+                "border-bottom": "none",
+                "border-bottom-left-radius": "4px",
+                "border-bottom-right-radius": "4px"
+              }
+            },
+            ".nav-dropdown .link": {
+              "padding": "0 0.3em !important",
+              "margin": "0.2em 1em !important"
+            },
+            ".nav-dropdown .link.dropdown-toggle::after": {
+              "margin-left": "0.5rem",
+              "margin-top": "0.2rem"
+            },
+            ".nav-link": {
+              "position": "relative"
+            },
+            ".container": {
+              "display": "flex",
+              "margin": "auto",
+              "& when not (@collapsed)": {
+                "@media (min-width: 992px)": {
+                  "flex-wrap": "nowrap"
+                }
+              }
+            },
+            ".iconfont-wrapper": {
+              "color": "@iconsColor !important",
+              "font-size": "1.5rem",
+              "padding-right": "0.5rem"
+            },
+            ".navbar-caption": {},
+            ".navbar-nav": {},
+            ".dropdown-menu, .navbar.opened": {
+              "background": "@menuBgColor !important"
+            },
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            ".dropdown .dropdown-menu .dropdown-item": {
+              "width": "auto",
+              "transition": "all 0.25s ease-in-out",
+              "&::after": {
+                "right": "0.5rem"
+              },
+              ".mbr-iconfont": {
+                "margin-right": "0.5rem",
+                "vertical-align": "sub",
+                "&:before": {
+                  "display": "inline-block",
+                  "transform": "scale(1, 1)",
+                  "transition": "all 0.25s ease-in-out"
+                }
+              }
+            },
+            ".collapsed": {
+              ".dropdown-menu .dropdown-item:before": {
+                "display": "none"
+              },
+              ".dropdown .dropdown-menu .dropdown-item": {
+                "padding": "0.235em 1.5em 0.235em 1.5em !important",
+                "transition": "none",
+                "margin": "0 !important"
+              }
+            },
+            ".dropdown-item.active, .dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".nav-dropdown .link.dropdown-toggle": {
+              "margin-right": "1.667em",
+              "&[aria-expanded=\"true\"]": {
+                "margin-right": "0",
+                "padding": "0.667em 1.667em"
+              }
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor",
+                ".dropdown-submenu": {
+                  "margin": "0",
+                  "left": "100%"
+                }
+              }
+            },
+            ".navbar .dropdown.open > .dropdown-menu": {
+              "display": "block"
+            },
+            "ul.navbar-nav": {
+              "flex-wrap": "wrap"
+            },
+            ".navbar-buttons": {
+              "text-align": "center",
+              "min-width": "170px"
+            },
+            "button.navbar-toggler": {
+              "outline": "none",
+              "width": "31px",
+              "height": "20px",
+              "cursor": "pointer",
+              "transition": "all 0.2s",
+              "position": "relative",
+              "align-self": "center",
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all 0.2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all 0.15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all 0.2s"
+                }
+              }
+            },
+            "nav.opened .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              },
+              "&:nth-child(2)": {
+                "transform": "rotate(45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(3)": {
+                "transform": "rotate(-45deg)",
+                "transition": "all 0.25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all 0.2s"
+              }
+            },
+            ".navbar-dropdown": {
+              "padding": "0 1rem",
+              "& when (@sticky)": {
+                "position": "fixed"
+              }
+            },
+            "a.nav-link": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center"
+            },
+            ".icons-menu": {
+              "flex-wrap": "nowrap",
+              "display": "flex",
+              "justify-content": "center",
+              "padding-left": "1rem",
+              "padding-right": "1rem",
+              "padding-top": "0.3rem",
+              "text-align": "center"
+            },
+            "@media screen and (~'-ms-high-contrast: active'), (~'-ms-high-contrast: none')": {
+              ".navbar": {
+                "height": "70px",
+                "&.opened": {
+                  "height": "auto"
+                }
+              },
+              ".nav-item .nav-link:hover::before": {
+                "width": "175%",
+                "max-width": "calc(100% ~\"+\" 2rem)",
+                "left": "-1rem"
+              }
+            },
+            "&.navbar-short": {
+              "min-height": "140px",
+              ".navbar-logo": {
+                "img": {
+                  "height": "3rem !important"
+                }
+              }
+            }
+          },
+          "_name": "menu01",
+          "_sourceTheme": "nichem5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"nichem5 menu menu1\" group=\"Menu\" plugins=\"DropDown, TouchSwipe\" always-top global once=\"menu\" not-draggable position-absolute>\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Logo\" name=\"showLogo\" checked>\n        <input type=\"range\" title=\"Logo Size\" inline name=\"logoSize\" min=\"3\" max=\"8\" step=\"0.1\" value=\"7.1\" condition=\"showLogo\">\n        <input type=\"checkbox\" title=\"Brand Name\" name=\"showBrand\">\n        <input type=\"checkbox\" title=\"Menu Items\" name=\"showItems\" checked>\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcons\">\n        <select title=\"Amount\" name=\"iconsAmount\" condition=\"showIcons\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#ffffff\" condition=\"showIcons\">\n        <input type=\"checkbox\" title=\"Button\" name=\"showButtons\" checked>\n        <header>Styles</header>\n        <input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked>\n        <input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n        <input type=\"checkbox\" title=\"Transparent\" name=\"transparent\">\n        <input type=\"range\" title=\"Opacity\" name=\"opacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"transparent\">\n        <input type=\"color\" title=\"Color\" name=\"menuBgColor\" value=\"#000000\">\n        <input type=\"color\" title=\"Hamburger\" name=\"hamburgerColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <nav class=\"navbar navbar-dropdown\" mbr-class=\"{'navbar-fixed-top':sticky,\n                    'navbar-expand-lg':!collapsed,\n                    'collapsed':collapsed}\">\n        <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n            <div class=\"navbar-brand\">\n                <span mbr-if=\"showLogo\" class=\"navbar-logo\">\n                    <a href=\"index.html\">\n                        <img src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-01-18.01.16-11165bd6.jpg\" alt=\"לוגו\" mbr-style=\"{'height': logoSize + 'rem'}\">\n                    </a>\n                </span>\n                <span mbr-if=\"showBrand\" mbr-buttons mbr-theme-style=\"display-7\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,-iconFont\"><a class=\"navbar-caption text-white\" data-app-selector=\".navbar-caption\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\"></a></span>\n            </div>\n            <div mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-lg btn-danger\" href=\"tel:+97286888500\" data-app-placeholder=\"Type Text\">086888500<span class=\"mobi-mbri mobi-mbri-phone mbr-iconfont mbr-iconfont-btn\"></span></a></div>\n            <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-bs-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showIcons || showButtons\">\n                <div class=\"hamburger\">\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                    <span></span>\n                </div>\n            </button>\n            <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\" mbr-if=\"showItems || showIcons || showButtons\">\n                <ul mbr-menu class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-4\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish && !showBrand && !showLogo}\"><li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"index.html#contacts01-g\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">צרו קשר</a></li><li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"index.html#tabs1-5\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">התפריט שלנו</a></li>\n                    <li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"index.html#header17-f\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                            הזמנת משלוח</a></li><li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"index.html#team02-7\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">\n                            מי אנחנו</a></li>\n                    <li class=\"nav-item\"><a class=\"nav-link link text-white text-primary\" href=\"index.html#top\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">עוף בגריל</a>\n                    </li></ul>\n                <div class=\"icons-menu\" mbr-if=\"showIcons\">\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-facebook socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 1\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-twitter socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 2\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-instagram socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"iconsAmount > 3\">\n                        <span mbr-icon class=\"p-2 mbr-iconfont socicon-linkedin socicon\"></span>\n                    </a>\n                </div>\n\n            </div>\n\n        </div>\n    </nav>\n</section>",
+          "_cid": "uH851WqvcW",
+          "_anchor": "menu01-0",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@gradientBg)": {
+              "position": "relative",
+              "&::before": {
+                "content": "''",
+                "position": "absolute",
+                "top": "0",
+                "left": "0",
+                "width": "100%",
+                "height": "100%",
+                "background-image": "linear-gradient(@gradientColor 50%, transparent)",
+                "pointer-events": "none",
+                "z-index": "1"
+              }
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".row": {
+              "justify-content": "center"
+            },
+            ".content-wrapper": {
+              "position": "relative",
+              "z-index": "2",
+              ".mbr-section-title": {
+                "margin-bottom": "22px",
+                "background-image": "linear-gradient(0deg, @title_1, @title_2 50%)",
+                "-webkit-background-clip": "text",
+                "-webkit-text-fill-color": "transparent"
+              },
+              ".mbr-text": {
+                "margin-bottom": "22px"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".mbr-section-title, .mbr-section-btn": {
+              "text-align": "center"
+            },
+            ".mbr-section-title, .mbr-section-btn DIV": {
+              "text-align": "center"
+            },
+            ".navbar-logo img": {
+              "height": "3rem !important"
+            }
+          },
+          "_name": "header02",
+          "_sourceTheme": "emblemm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header02 emblemm5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Title Gradient 1\" value=\"#f79300\" name=\"title_1\" condition=\"showTitle\">\n        <input type=\"color\" title=\"Title Gradient 2\" value=\"#f79300\" name=\"title_2\" condition=\"showTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-01-18.38.37-b1e5530f.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#000000\">\n            <input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=y62fXG6pBWg\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/emblemm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Gradient Background\" name=\"gradientBg\">\n        <input type=\"color\" title=\"Gradient Color\" name=\"gradientColor\" value=\"#000000\" condition=\"gradientBg\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-10\">\n                <div class=\"content-wrapper\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                        <b>\n</b>\n                    <div><br></div><div>עוף בגריל באר שבע</div></h2>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">עוף בגריל בביג -עוף בגריל באר שבע - עוף בטעם של פעם - עוף בגריל הזמנות אונליין<br> תוספות מעולות ושירות משלוחים מצויין</p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"tel:08688500\" data-app-placeholder=\"Type Text\">הזמנת משלוח</a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uH86GzrHb1",
+          "_anchor": "header02-1",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "team02",
+          "_sourceTheme": "complexm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"people2\" group=\"People\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"range\" title=\"Icons\" name=\"icons\" min=\"1\" max=\"3\" step=\"1\" value=\"2\">\n        <header>Color</header>\n        <input type=\"color\" name=\"box\" title=\"Hover BG\" value=\"#f79300\">\n        <input type=\"color\" name=\"icon\" title=\"Icon\" value=\"#000000\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/complexm5/components/_images/background2.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/complexm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-lg-5 col-md-12 col-12\">\n                <h2 class=\"mbr-section-title align-left mbr-fonts-style mbr-white mb-5\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>מי אנחנו</b></h2>\n                <p class=\"mbr-section-text align-left mbr-fonts-style mbr-white mb-5\" data-app-selector=\".mbr-section-text\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">עוף בגריל בביג טעמים של בית, אווירה ביתית וחמה במחירים שמתאימים לכל כיס. אוכל שנעשה בעבודת יד, עם כל הלב והנשמה, מקום שתיכנס ותרגיש בבית, תראה חיוך ושתצא, ישאר לך טעם של עוד. עוף בגריל בביג באר שבע – חוויה קולינרית אמיתית. המומלצים שלנו: שיפודים על האש, אוכל ביתי, גריל איכותי, אוכל טעים ומזין, עסקת צהריים משתלמת.חוויה ממש ממליצה לכם</p>\n            </div>\n            <div class=\"col-12 col-md-12 col-lg-5\">\n                <div class=\"image-wrapper p-0\">\n                    <img class=\"w-100\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-01-18.38.37-b1e5530f.jpg\" alt=\" אוכל לשישי ליד תחנת רכבת\">\n                    <div class=\"img-link\">\n                        <h2 class=\"mbr-fonts-style name pb-1\" data-app-selector=\".name\" mbr-theme-style=\"display-5\">עוף בגריל</h2>\n                        <h3 class=\"mbr-fonts-style status p-0\" data-app-selector=\".status\" mbr-theme-style=\"display-7\"></h3>\n                        <div class=\"icons\">\n                            <a href=\"https://www.facebook.com/profile.php?id=61566469498602&locale=he_IL\"><span mbr-icon class=\"mbr-iconfont link-icon socicon-facebook socicon\" mbr-if=\"icons > 0\"></span></a>\n                            <a href=\"https://www.instagram.com/of_bagril_bbig/\"><span mbr-icon class=\"mbr-iconfont link-icon socicon-instagram socicon\" mbr-if=\"icons > 1\"></span></a>\n                            <span mbr-icon class=\"mbr-iconfont link-icon socicon-twitter socicon\" mbr-if=\"icons > 2\"></span>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "img": {
+              "transition": "all 0.3s",
+              "object-fit": "cover"
+            },
+            ".row": {
+              "justify-content": "space-between"
+            },
+            ".image-wrapper": {
+              "overflow": "hidden",
+              "position": "relative",
+              "cursor": "pointer",
+              "img": {
+                "height": "100%",
+                "object-fit": "cover"
+              },
+              "@media (max-width: 991px)": {
+                "padding": "1rem"
+              },
+              "&:hover, &:focus-within": {
+                ".img-link": {
+                  "transform": "translateY(0)"
+                }
+              },
+              "@media (max-width: 992px)": {
+                "margin-bottom": "2rem"
+              }
+            },
+            ".img-link": {
+              "background": "@box",
+              "display": "flex",
+              "justify-content": "space-between",
+              "align-items": "center",
+              "transition": "all 0.3s",
+              "padding": "2rem",
+              "position": "absolute",
+              "bottom": "-1rem",
+              "left": "0",
+              "color": "#000000",
+              "width": "100%",
+              "transform": "translateY(100%)",
+              "span": {
+                "font-size": "1.5rem",
+                "padding-bottom": "0.5rem",
+                "color": "@icon",
+                "padding-right": "1rem"
+              }
+            },
+            ".text-wrapper": {
+              "@media (min-width: 992px)": {
+                "padding": "0 2rem"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#f79300",
+              "text-align": "center"
+            },
+            ".mbr-section-text": {
+              "color": "#000000",
+              "text-align": "center"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_cid": "uHkVv9gA0I",
+          "_anchor": "team02-7",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value",
+              "& when (@gradientBg)": {
+                "background": "linear-gradient(0deg, @bg-value, @color2)"
+              }
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-title": {
+              "letter-spacing": "0.1em",
+              "text-align": "center"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ff8b43"
+            },
+            ".image-wrap": {
+              "img": {
+                "width": "100%"
+              }
+            },
+            ".mbr-desc": {
+              "width": "100%",
+              "text-align": "center"
+            },
+            ".tab-content": {
+              "padding": "2rem 1rem 1rem 1rem",
+              "border-top": "3px solid @activeTabColor",
+              "-webkit-box-shadow": "0px 4px 26px -5px rgba(0, 0, 0, 0.2)",
+              "-moz-box-shadow": "0px 4px 26px -5px rgba(0, 0, 0, 0.2)",
+              "box-shadow": "0px 4px 26px -5px rgba(0, 0, 0, 0.2)",
+              "background": "@tabsBg"
+            },
+            ".nav": {
+              "border": "none"
+            },
+            ".nav-tabs": {
+              "-webkit-justify-content": "center",
+              "justify-content": "center",
+              "-webkit-flex-wrap": "wrap",
+              "flex-wrap": "wrap"
+            },
+            ".card-box": {
+              "-webkit-align-items": "baseline",
+              "align-items": "baseline",
+              ".mbr-price": {
+                "margin": "0"
+              },
+              ".mbr-text": {
+                "line-height": "1"
+              }
+            },
+            ".nav-tabs .nav-link": {
+              "box-sizing": "border-box",
+              "color": "#ffffff!important",
+              "font-style": "normal",
+              "font-weight": "500",
+              "padding": "0.5rem 1rem",
+              "margin": "0px",
+              "margin-left": "-0.5px",
+              "margin-right": "-0.5px",
+              "margin-bottom": "1rem",
+              "transition": "all 0.5s",
+              "border": "0 !important",
+              "&:hover": {
+                "color": "@activeTabColor",
+                "border": "0 !important"
+              },
+              "&.active": {
+                "color": "@activeTabColor",
+                "border": "0 !important",
+                "background-color": "transparent",
+                "position": "relative"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".container": {
+                "padding-left": "1rem",
+                "padding-right": "1rem"
+              }
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-text": {
+              "text-align": "center"
+            },
+            ".mbr-price": {
+              "text-align": "center"
+            },
+            ".nav-tabs .nav-link.active": {
+              "color": "#ff8b43!important"
+            },
+            ".mbr-price DIV": {
+              "text-align": "left"
+            }
+          },
+          "_name": "tabs1",
+          "_sourceTheme": "restaurantm4",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"tabs1 restaurantm4_tabs1 tabs\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" group=\"Tabs\" mbr-class=\"{'mbr-parallax-background':bg.parallax}\" plugins=\"mbr-tabs\">\n\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input inline max=\"9\" min=\"0\" name=\"paddingTop\" step=\"1\" title=\"Top\" type=\"range\" value=\"6\">\n\t\t<input inline max=\"9\" min=\"0\" name=\"paddingBottom\" step=\"1\" title=\"Bottom\" type=\"range\" value=\"5\">\n\t\t<select name=\"bootstrapTabs\" title=\"Tabs Count\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option value=\"4\" selected>4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t\t<option value=\"6\">6</option>\n\t\t\t<option value=\"7\">7</option>\n\t\t\t<option value=\"8\">8</option>\n\t\t</select>\n\t\t<input inline max=\"50\" min=\"1\" name=\"items1\" step=\"1\" title=\"Tab 1 Items\" type=\"range\" value=\"5\">\n\t\t<input condition=\"bootstrapTabs>1\" inline=\"\" max=\"50\" min=\"1\" name=\"items2\" step=\"1\" title=\"Tab 2 Items\" type=\"range\" value=\"18\">\n\t\t<input condition=\"bootstrapTabs>2\" inline=\"\" max=\"50\" min=\"1\" name=\"items3\" step=\"1\" title=\"Tab 3 Items\" type=\"range\" value=\"4\">\n\t\t<input condition=\"bootstrapTabs>3\" inline=\"\" max=\"50\" min=\"1\" name=\"items4\" step=\"1\" title=\"Tab 4 Items\" type=\"range\" value=\"6\">\n\t\t<header>Show / Hide</header>\n\t\t<input name=\"showTitle\" title=\"Title\" type=\"checkbox\" checked>\n\t\t<input name=\"showSubtitle\" title=\"Subtitle\" type=\"checkbox\">\n\t\t<input name=\"tabsColor\" title=\"Tabs Color\" type=\"color\" value=\"#ffffff\">\n\t\t<input name=\"activeTabColor\" title=\"Active Tab Color\" type=\"color\" value=\"#ff8b43\">\n\t\t<header>Background</header>\n\t\t<input name=\"tabsBg\" title=\"Tabs\" type=\"color\" value=\"#f7f7f7\">\n\t\t<fieldset name=\"bg\" parallax type=\"background\">\n\t\t\t<input selected title=\"Image\" type=\"image\" value=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-01-18.38.42-b38f2fca.jpg\">\n\t\t\t<input title=\"Color\" type=\"color\" value=\"#efefef\">\n\t\t\t<input title=\"Video\" type=\"video\" value=\"https://www.youtube.com/watch?v=pjiVuLVqWQg\">\n\t\t</fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/restaurantm4/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n\t\t<input checked condition=\"bg.type=='color'\" name=\"gradientBg\" title=\"Gradient\" type=\"checkbox\">\n\t\t<input condition=\"gradientBg && bg.type == 'color'\" name=\"color2\" title=\"Color 2\" type=\"color\" value=\"#ffffff\">\n\n\t\t<input condition=\"bg.type !== 'color'\" name=\"overlay\" title=\"Overlay\" type=\"checkbox\" checked>\n\t\t<input condition=\"overlay && bg.type !== 'color'\" name=\"overlayColor\" title=\"Overlay Color\" type=\"color\" value=\"#000000\">\n\t\t<input condition=\"overlay && bg.type !== 'color'\" inline max=\"1\" min=\"0\" name=\"overlayOpacity\" step=\"0.1\" title=\"Opacity\" type=\"range\" value=\"0.6\">\n\t</mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n\t<div class=\"container\">\n\t\t<h3 class=\"mbr-section-title align-center mbr-white mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-5\">\n\t\t\t<i>Discover</i>\n\t\t</h3>\n\t\t<h2 class=\"mbr-section-subtitle align-center mbr-bold mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\">התפריט שלנו</h2>\n\t\t<div class=\"media-container-row\">\n\t\t\t<div class=\"col-12 col-md-10\">\n\t\t\t\t<ul class=\"nav nav-tabs\" data-app-placeholder=\"Type Title\" role=\"tablist\">\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-theme-style=\"display-5\" role=\"presentation\"><a aria-controls=\"tech-tab1-content\" aria-expanded=\"true\" class=\"nav-link mbr-fonts-style show active\" data-toggle=\"tab\" href=\"#tabs1-5_tab0\" role=\"tab\" data-app-placeholder=\"Type Text\" data-bs-toggle=\"tab\" aria-selected=\"true\"> תוספות </a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 1\" mbr-theme-style=\"display-5\" role=\"presentation\"><a aria-controls=\"tech-tab2-content\" aria-expanded=\"true\" class=\"nav-link mbr-fonts-style active\" data-toggle=\"tab\" href=\"#tabs1-5_tab1\" role=\"tab\" data-app-placeholder=\"Type Text\" data-bs-toggle=\"tab\" aria-selected=\"true\">תפריט שישי</a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 2\" mbr-theme-style=\"display-5\" role=\"presentation\"><a aria-controls=\"tech-tab3-content\" aria-expanded=\"true\" class=\"nav-link mbr-fonts-style active\" data-toggle=\"tab\" href=\"#tabs1-5_tab2\" role=\"tab\" data-app-placeholder=\"Type Text\" data-bs-toggle=\"tab\" aria-selected=\"true\">&nbsp;עסקיות<br></a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 3\" mbr-theme-style=\"display-5\" role=\"presentation\"><a aria-controls=\"tech-tab4-content\" aria-expanded=\"true\" class=\"nav-link mbr-fonts-style\" data-toggle=\"tab\" href=\"#tabs1-5_tab3\" role=\"tab\" data-app-placeholder=\"Type Text\" data-bs-toggle=\"tab\" aria-selected=\"false\"> תפריט יום </a></li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 4\" mbr-theme-style=\"display-5\" role=\"presentation\">\n\t\t\t\t\t\t<a aria-controls=\"tech-tab5-content\" aria-expanded=\"true\" class=\"nav-link mbr-fonts-style\" data-toggle=\"tab\" href=\"#tech-tab5-content\" id=\"tech-tab5\" role=\"tab\"> Other </a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 5\" mbr-theme-style=\"display-5\" role=\"presentation\">\n\t\t\t\t\t\t<a aria-controls=\"tech-tab6-content\" aria-expanded=\"true\" class=\"nav-link mbr-fonts-style\" data-toggle=\"tab\" href=\"#tech-tab6-content\" id=\"tech-tab6\" role=\"tab\"> Other </a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 6\" mbr-theme-style=\"display-5\" role=\"presentation\">\n\t\t\t\t\t\t<a aria-controls=\"tech-tab7-content\" aria-expanded=\"true\" class=\"nav-link mbr-fonts-style\" data-toggle=\"tab\" href=\"#tech-tab7-content\" id=\"tech-tab7\" role=\"tab\"> Other </a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrBtnColor,-mbrLink,-mbrBtnRemove\" mbr-buttons mbr-if=\"bootstrapTabs > 7\" mbr-theme-style=\"display-5\" role=\"presentation\">\n\t\t\t\t\t\t<a aria-controls=\"tech-tab8-content\" aria-expanded=\"true\" class=\"nav-link mbr-fonts-style\" data-toggle=\"tab\" href=\"#tech-tab8-content\" id=\"tech-tab8\" role=\"tab\"> Other </a>\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t\t<div class=\"tab-content\">\n\t\t\t\t\t<div aria-labelledby=\"tech-tab1\" class=\"tab-pane active\" id=\"tech-tab1-content\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\" mbr-list mbr-list-grow=\"items1\">\n\t\t\t\t\t\t\t<div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">18 ₪<br></p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><div><b>טבעות בצל&nbsp;</b></div></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tטבעות בצל שאנחנו מכינים</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"אוכל מוכן לשבת בבאר\" src=\"@PROJECT_PATH@/assets/images/esperanza-doronila-4fo9vox0t7m-unsplash.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t10/20</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>צ’יפס</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tקטן/גדול</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"מסעדת בשרים בבאר שבע\" src=\"@PROJECT_PATH@/assets/images/richard-bell-01cym9nfy0s-unsplash.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t 3 ₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>פיתה</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\"></p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"מסעדות בזול בבאר שבע\" src=\"@PROJECT_PATH@/assets/images/stephanie-sarlos-b-osh5dllw4-unsplash.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t15 ₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><div><b>טפ\"א אפוי</b></div></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">טפ\"א אפוי במקום טיבול שלנו</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"מסעדה כשרה בבאר שבע\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-23-14.17.16-a9648300.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t  5 ₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>לאפה</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">לאפה בעבודת יד</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"  איפה יש אוכל ביתי בבאר שבע\" src=\"@PROJECT_PATH@/assets/images/oussama-laabidate-0ltjs-7kuou-unsplash.jpg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"tech-tab2\" class=\"tab-pane\" id=\"tech-tab2-content\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\" mbr-list mbr-list-grow=\"items2\">\n\t\t\t\t\t\t\t<div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t8.5₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>סלק אדום</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tהמחיר ל100 גרם </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"אוכל של סבתא בבאר שבע ,סלק\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.34.55-9681218.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t8.5₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>מטבוחה</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">המחיר ל100 גרם</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"תוספות לשישי\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.32.32-625d7631.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t8.5₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>גזר מבושל</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tהמחיר ל100 גרם </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"קייטרינג ביתי לשישי,גזר מבושל\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.35.25-98d8656b.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t8.5₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>חציל זעלוק</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tהמחיר ל100 גרם </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"מסעדה כשרה בבאר שבע\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.33.39-53b0abbc.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t7.5₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>תירס גמבה פטריות</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tהמחיר ל100 גרם </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"קייטרינג כשר לשבת ,סלט תירס\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.36.08-379b641b.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t8.5₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>חציל במינז</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tהמחיר ל100 גרם </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"איפה יש אוכל ביתי בבאר שבע\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.34.21-c91f490d.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t7.5₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>כרוב סגול במיונז</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tהמחיר ל100 גרם </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"אוכל מוכן לקחת לשבת, כרוב סגול\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.37.05-47877608.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t7.5₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>מלפפון עם בצל</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tהמחיר ל100 גרם </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"אוכל מוכן לשבת בבאר שבע\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.36.38-378bae7e.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t7.5₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>כרוב לבן</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tהמחיר ל100 גרם </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"תבשילים חמים לשבת בבאר שבע,כרוב לבן\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.37.33-3e485f68.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t8.5₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>סלט מיונז</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tהמחיר ל100 גרם </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"מסעדות בזול בבאר שבע\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.38.14-9cb11fe1.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t8.9₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>קציצות דגים</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tהמחיר ל100 גרם </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"איפה מזמינים אוכל מוכן לשבת ,קציצות דגים\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.40.14-1b7b6f83.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t8.5₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>חצילים מטוגנים</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tהמחיר ל100 גרם </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"משלוחי אוכל ביתי בדרום\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.38.46-3e2bb94b.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t8.9₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>קציצות בקר</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tהמחיר ל100 גרם </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"איפה יש עוף בגריל ,קציצות בשר\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.40.44-34f89720.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t8.5₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>פלפל חריף</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tהמחיר ל100 גרם </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"אוכל מוכן לשישי בדרום\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.39.19-2b8b66a8.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t10 ₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>קציצות  מטוגנות טוניסאיות</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tהמחיר הוא לקציצה אחת</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"עוף בגריל משלוחים ,קציצות טוניסיאות\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.42.06-6a221ce8.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t50₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>חלת שניצל</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tחלת שניצל&amp;מטבוחה&amp;חצילים&amp;פלפל חריף &amp; שתיה</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"מסעדות פתוחות בשישי בבאר שבע\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.44.46-3362f568.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t65₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>חצי עוף</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tחצי עוף קוסקוס סלטים </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"חצי עוף עם קוסקוס\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.42.24-83a56ff6.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t50₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>חלת קציצות</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tחלת קציצות&amp;מטבוחה&amp;חצילים&amp;פלפל חריף&amp; שתיה</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"תפריט אוכל מוכן לשישי ,שניצל בחלה\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-04-11.45.52-7d0be5ce.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"tech-tab3\" class=\"tab-pane\" id=\"tech-tab3-content\" role=\"tabpanel\">\n\t\t\t\t\t\t<div class=\"row\" mbr-list mbr-list-grow=\"items3\">\n\t\t\t\t\t\t\t<div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t65₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>עסקית עוף</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tחצי עוף+אורז+ תפןח אדמה+סלטים&nbsp;</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"שניצל פריך בבאר שבע\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-23-14.26.43-0acabcae.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t50₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>עסקית בגט</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">עסקית בגט / לאפה + שתייה + צ’יפס<br>(שניצל או שיפוד לבחירה מתוך מבחר השיפודים)<br> </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"שניצל ביתי בטייק אווי\" src=\"@PROJECT_PATH@/assets/images/ilham-putra-dy8f7zlzvyu-unsplash.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t219₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>קומבינה</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">ארבעה מנות קוקוס + עוף שלם + שתייה לכל סועד </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"אוכל מזרחי אותנטי\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-01-18.47.55-15b00845.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t65₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>עסקית קוסקוס</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tעיסקית קוסקוס 2 קציצות&nbsp; מחשי וסלטים</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"מעורב ירושלמי מוכן\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-23-14.17.45-e1c9c4af.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div></div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div aria-labelledby=\"tech-tab4\" class=\"tab-pane\" id=\"tech-tab4-content\" role=\"tabpane4\">\n\t\t\t\t\t\t<div class=\"row\" mbr-list mbr-list-grow=\"items1\">\n\t\t\t\t\t\t\t<div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t40₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><div><b>שניצלונים / נקניקיות</b></div></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tמוגש עם תוספת אחת לבחירה: אורז, צ’יפס או טפי\"א אפוי </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"תפריט עסקית עוף\" src=\"@PROJECT_PATH@/assets/images/amanda-lim-gu-l-q0d6r0-unsplash.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t20₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>מבחר שיפודים</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tקבב/פרגית/מרגז/כנפיים/לבבות/כבד עוף </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"עסקית חמה לשישי\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-01-18.04.21-48c51f02-1.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t60₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>מעורב חומוס</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">\n\t\t\t\t\t\t\t\t\t\t\t\t\tמעורב חומוס לאפה שתיה סלטים </p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"קייטרינג לשישי שבת\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-23-14.20.30-eba823e2.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t60₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><div><b>עוף שלם&nbsp;</b></div></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">עוף צלוי על גריל&nbsp;</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\" אוכל מוכן לעובדים\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-03-19.15.02-52eba74b.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div><div class=\"col-md-12 col-lg-6 pb-3 item-wrap\">\n\t\t\t\t\t\t\t\t<div class=\"row align-items-start\">\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"row card-box\">\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-price  mbr-fonts-style align-right\" data-app-selector=\".mbr-price\" mbr-theme-style=\"display-5\">40₪</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-8\">\n\t\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"mbr-text mbr-fonts-style align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-5\"><b>קוסקוס</b></h3>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"col-md-12\">\n\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"mbr-desc mbr-fonts-style align-left\" data-app-selector=\".mbr-desc\" mbr-theme-style=\"display-7\">קוסקוס צמחוני&nbsp;</p>\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"col-md-4\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"image-wrap\">\n\t\t\t\t\t\t\t\t\t\t\t<img alt=\"אוכל בביג באר שבע\" src=\"@PROJECT_PATH@/assets/images/whatsapp-2025-04-23-14.15.55-7bf84d9e.jpeg\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div></section>",
+          "_cid": "uHjConAlcA",
+          "_anchor": "tabs1-5",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "display": "flex",
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "@media (min-width: 768px)": {
+              "align-items": "~\"@{verticalAlign}\"",
+              ".row": {
+                "justify-content": "~\"@{horizontalAlign}\""
+              },
+              ".content-wrap": {
+                "padding": "1rem 3rem"
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".content-wrap": {
+                "min-width": "50%"
+              }
+            },
+            "@media (max-width: 767px)": {
+              "-webkit-align-items": "center",
+              "align-items": "~\"@{verticalAlign}\"",
+              ".mbr-row": {
+                "-webkit-justify-content": "center",
+                "justify-content": "center"
+              },
+              ".content-wrap": {
+                "width": "100%"
+              }
+            },
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "center"
+            }
+          },
+          "_name": "header17",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header16\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"24\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"3\" max=\"12\" step=\"1\" value=\"6\">\n    <header>Show / Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n    <select title=\"Vertical Align\" name=\"verticalAlign\" condition=\"fullScreen\">\n      <option value=\"flex-start\">Top</option>\n      <option value=\"center\">Center</option>\n      <option value=\"flex-end\" selected>Bottom</option>\n    </select>\n    <select title=\"Horizontal Align\" name=\"horizontalAlign\">\n      <option value=\"flex-start\">Left</option>\n      <option value=\"center\" selected>Center</option>\n      <option value=\"flex-end\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background17.jpg\" parallax>\n      <input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=2Gg6Seob5Mg\">\n      <input type=\"color\" title=\"Color\" value=\"#131313\" selected>\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' && overlay\">\n    <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n  </mbr-parameters>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row\">\n      <div class=\"content-wrap col-12 col-md-{{contentWidth}}\">\n        <h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\">\n          <b><br><br></b></h1>\n        <h2 class=\"mbr-section-subtitle mbr-fonts-style mbr-white mb-4\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\">\n          Header Subtitle\n        </h2>\n        <p class=\"mbr-fonts-style mbr-text mbr-white mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Full-screen block with parallax image background and flexible\n          configuration, free vertical and horizontal\n          content alignment.&nbsp;</p>\n        <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\"><a class=\"btn btn-danger\" href=\"tel:08688500\" data-app-placeholder=\"Type Text\">להזמנות</a></div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "uK1wHzYoKR",
+          "_anchor": "header17-f",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "contacts01",
+          "_sourceTheme": "cargom5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features02 cargom5\" group=\"Features\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <header>Cards</header>\n        <input type=\"checkbox\" title=\"Card Icon\" name=\"showIcon\" checked>\n        <input type=\"color\" title=\"Icon Color\" name=\"icon\" value=\"#2c2c26\" condition=\"showIcon\" selected>\n        <input type=\"color\" title=\"Icon BG\" name=\"iconBg\" value=\"#f79300\" condition=\"showIcon\" selected>\n        <input type=\"checkbox\" title=\"Card Title\" name=\"showCardTitle\" checked>\n        <input type=\"color\" title=\"Card BG\" name=\"cardBg\" value=\"#e5e5e5\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/cargom5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/cargom5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"title-wrapper\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>צרו קשר</b></h2>\n                </div>\n            </div>\n        </div>\n        <div class=\"row items-wrapper\">\n            <div class=\"col-12 col-lg-4 item features-without-image item-mb\">\n                <div class=\"item-wrapper\">\n                    <div class=\"iconfont-wrap\" mbr-if=\"showIcon\">\n                        <span mbr-icon class=\"mbr-iconfont mobi-mbri-phone mobi-mbri\"></span>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title, .iconfont-wrap\">\n                            <b><a href=\"tel:+97286888500\" class=\"text-primary\">086888500</a></b>\n                        </h4>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-4 item features-without-image item-mb\">\n                <div class=\"item-wrapper\">\n                    <div class=\"iconfont-wrap\" mbr-if=\"showIcon\">\n                        <span mbr-icon class=\"mbr-iconfont mobi-mbri-map-pin mobi-mbri\"></span>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title, .iconfont-wrap\"><b><a href=\"https://www.google.com/maps/place/%D7%90%D7%9C%D7%99%D7%94%D7%95+%D7%A0%D7%90%D7%95%D7%99+26,+%D7%91%D7%90%D7%A8+%D7%A9%D7%91%D7%A2%E2%80%AD/data=!4m2!3m1!1s0x1502664be43aedd7:0x1ddff79b71434f05?sa=X&ved=1t:242&ictx=111\" class=\"text-primary\">אליהו נאוי 26</a></b></h4>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-4 item features-without-image item-mb\">\n                <div class=\"item-wrapper\">\n                    <div class=\"iconfont-wrap\" mbr-if=\"showIcon\">\n                        <span mbr-icon class=\"mbr-iconfont mobi-mbri-letter mobi-mbri\"></span>\n                    </div>\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showCardTitle\" data-app-selector=\".card-title, .iconfont-wrap\"><b>mail.com</b></h4>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".title-wrapper": {
+              ".mbr-section-title": {
+                "margin-bottom": "100px",
+                "@media (max-width: 992px)": {
+                  "margin-bottom": "24px"
+                }
+              }
+            },
+            ".items-wrapper": {
+              "margin": "0 -8px",
+              "margin-top": "-8rem",
+              "& when not (@showTitle)": {
+                "margin-top": "0"
+              },
+              "@media (max-width: 992px)": {
+                "margin-top": "0"
+              },
+              ".item": {
+                "padding": "0 8px"
+              }
+            },
+            ".item": {
+              "margin-bottom": "16px",
+              "animation": "none !important",
+              "@media (max-width: 992px)": {
+                "margin-bottom": "12px"
+              },
+              ".item-wrapper": {
+                "height": "100%",
+                "display": "flex",
+                "flex-direction": "column",
+                "justify-content": "space-between",
+                "padding": "64px",
+                "position": "relative",
+                "overflow": "hidden",
+                "@media (max-width: 1440px)": {
+                  "padding": "32px"
+                },
+                "@media (max-width: 992px)": {
+                  "height": "auto",
+                  "padding": "24px"
+                },
+                "&::before": {
+                  "content": "''",
+                  "position": "absolute",
+                  "top": "0",
+                  "left": "0",
+                  "width": "100%",
+                  "height": "100%",
+                  "backdrop-filter": "blur(10px)",
+                  "pointer-events": "none"
+                },
+                "&::after": {
+                  "content": "''",
+                  "position": "absolute",
+                  "top": "0",
+                  "left": "0",
+                  "width": "100%",
+                  "height": "100%",
+                  "background-color": "@cardBg",
+                  "opacity": ".5",
+                  "pointer-events": "none"
+                },
+                ".iconfont-wrap": {
+                  "position": "relative",
+                  "z-index": "1",
+                  "margin-bottom": "64px",
+                  "@media (max-width: 992px)": {
+                    "margin-bottom": "24px"
+                  },
+                  ".mbr-iconfont": {
+                    "width": "60px",
+                    "height": "60px",
+                    "min-width": "60px",
+                    "display": "inline-flex",
+                    "align-items": "center",
+                    "justify-content": "center",
+                    "background-color": "@iconBg",
+                    "font-size": "36px",
+                    "color": "@icon"
+                  }
+                },
+                ".card-box": {
+                  "position": "relative",
+                  "z-index": "1",
+                  ".card-title": {
+                    "margin-bottom": "0"
+                  }
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#2c2c26",
+              "text-align": "center"
+            },
+            ".card-title": {
+              "color": "#2c2c26"
+            },
+            ".card-title, .iconfont-wrap": {
+              "text-align": "center"
+            }
+          },
+          "_cid": "uKeVDMHXb2",
+          "_anchor": "contacts01-g",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".bg-facebook when (@facebook)": {
+              "background": "#1778f2",
+              "color": "contrast(#1778f2)",
+              "&:hover": {
+                "background": "darken(#1778f2, 10)"
+              }
+            },
+            ".bg-twitter when (@twitter)": {
+              "background": "#1da1f2",
+              "color": "contrast(#1da1f2)",
+              "&:hover": {
+                "background": "darken(#1da1f2, 10)"
+              }
+            },
+            ".bg-pinterest when (@pinterest)": {
+              "background": "#e60023",
+              "color": "contrast(#e60023)",
+              "&:hover": {
+                "background": "darken(#e60023, 10)"
+              }
+            },
+            ".bg-instagram when (@instagram)": {
+              "background": "#f00075",
+              "color": "contrast(#f00075)",
+              "&:hover": {
+                "background": "darken(#f00075, 10)"
+              }
+            },
+            ".bg-slack when (@slack)": {
+              "background": "#4a154b",
+              "color": "contrast(#4a154b)",
+              "&:hover": {
+                "background": "darken(#4a154b, 10)"
+              }
+            },
+            ".bg-linkedin when (@linkedin)": {
+              "background": "#0077b5",
+              "color": "contrast(#0077b5)",
+              "&:hover": {
+                "background": "darken(#0077b5, 10)"
+              }
+            },
+            ".bg-behance when (@behance)": {
+              "background": "#0056ff",
+              "color": "contrast(#0056ff)",
+              "&:hover": {
+                "background": "darken(#0056ff, 10)"
+              }
+            },
+            ".bg-dribbble when (@dribbble)": {
+              "background": "#ea4c89",
+              "color": "contrast(#ea4c89)",
+              "&:hover": {
+                "background": "darken(#ea4c89, 10)"
+              }
+            },
+            ".bg-tiktok when (@tiktok)": {
+              "background": "#000000",
+              "color": "contrast(#000000)",
+              "&:hover": {
+                "background": "darken(#000000, 10)"
+              }
+            },
+            ".bg-youtube when (@youtube)": {
+              "background": "#ff0000",
+              "color": "contrast(#ff0000)",
+              "&:hover": {
+                "background": "darken(#ff0000, 10)"
+              }
+            },
+            ".bg-twitch when (@twitch)": {
+              "background": "#9146ff",
+              "color": "contrast(#9146ff)",
+              "&:hover": {
+                "background": "darken(#9146ff, 10)"
+              }
+            },
+            ".iconfont-wrapper": {
+              "display": "inline-block",
+              "font-size": "32px",
+              "border-radius": "50%",
+              "width": "72px",
+              "height": "72px",
+              "line-height": "72px",
+              "text-align": "center",
+              "transition": "all 0.3s ease-in-out"
+            },
+            "& when (@squareIcons)": {
+              ".iconfont-wrapper": {
+                "border-radius": "0 !important"
+              }
+            },
+            "[class^=\"socicon-\"]:before, [class*=\" socicon-\"]:before": {
+              "line-height": "55px",
+              "padding": ".6rem"
+            }
+          },
+          "_name": "social04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"social4\" group=\"Social\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"Socicon\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Square Icons\" name=\"squareIcons\">\n        <input type=\"checkbox\" title=\"Facebook\" name=\"facebook\" checked>\n        <input type=\"checkbox\" title=\"Twitter\" name=\"twitter\">\n        <input type=\"checkbox\" title=\"Instagram\" name=\"instagram\" checked>\n        <input type=\"checkbox\" title=\"Pinterest\" name=\"pinterest\">\n        <input type=\"checkbox\" title=\"Slack\" name=\"slack\">\n        <input type=\"checkbox\" title=\"Linkedin\" name=\"linkedin\">\n        <input type=\"checkbox\" title=\"Behance\" name=\"behance\">\n        <input type=\"checkbox\" title=\"Dribbble\" name=\"dribbble\">\n        <input type=\"checkbox\" title=\"Tiktok\" name=\"tiktok\" checked>\n        <input type=\"checkbox\" title=\"Youtube\" name=\"youtube\">\n        <input type=\"checkbox\" title=\"Twitch\" name=\"twitch\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12\">\n                <h3 class=\"mbr-section-title align-center mb-5 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .social-list\">\n                    <b>עקבו אחרינו</b></h3>\n                <div class=\"social-list align-center\">\n                    <a class=\"iconfont-wrapper bg-facebook m-2 \" target=\"_blank\" data-app-placeholder=\"Type Text\" href=\"https://www.facebook.com/profile.php?id=61566469498602&locale=he_IL\" mbr-if=\"facebook\">\n                        <span mbr-icon class=\"socicon-facebook socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper bg-twitter m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"twitter\">\n                        <span mbr-icon class=\"socicon-twitter socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper bg-instagram m-2\" href=\"https://www.instagram.com/of_bagril_bbig/\" target=\"_blank\" mbr-if=\"instagram\">\n                        <span mbr-icon class=\"socicon-instagram socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper bg-pinterest m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"pinterest\">\n                        <span mbr-icon class=\"socicon-pinterest socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper bg-slack m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"slack\">\n                        <span mbr-icon class=\"socicon-slack socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper bg-linkedin m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"linkedin\">\n                        <span mbr-icon class=\"socicon-linkedin socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper bg-behance m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"behance\">\n                        <span mbr-icon class=\"socicon-behance socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper bg-dribbble m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"dribbble\">\n                        <span mbr-icon class=\"socicon-dribbble socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper bg-tiktok m-2\" href=\"https://www.tiktok.com/@of_bagril_/video/7402628779710975248\" target=\"_blank\" mbr-if=\"tiktok\">\n                        <span mbr-icon class=\"socicon-tiktok socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper bg-youtube m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"youtube\">\n                        <span mbr-icon class=\"socicon-youtube socicon\"></span>\n                    </a>\n                    <a class=\"iconfont-wrapper bg-twitch m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"twitch\">\n                        <span mbr-icon class=\"socicon-twitch socicon\"></span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uKBNZYUg7V",
+          "_anchor": "social04-h",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "map01",
+          "_sourceTheme": "planm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"map01 planm5\" group=\"Contacts\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Border Color\" value=\"#F9A600\" name=\"border\" selected>\n        <header>Map</header>\n        <input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"אליהו נאוי 26\" value=\"אליהו נאוי 26\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/planm5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" name=\"border\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/planm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-10 card\">\n                <div class=\"title-wrapper\" mbr-if=\"showTitle\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>המיקום שלנו</b></h2>\n                </div>\n                <div class=\"google-map\" mbr-map=\"googleMap\"></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@fullWidth)": {
+              ".container-fluid": {
+                "padding": "0",
+                "@media (max-width: 992px)": {
+                  "padding": "0"
+                }
+              }
+            },
+            ".container": {
+              "@media (max-width: 992px)": {
+                "padding": "0 16px"
+              }
+            },
+            ".row": {
+              "justify-content": "center",
+              "margin": "0 20px",
+              "@media (max-width: 992px)": {
+                "margin": "0 10px"
+              },
+              ".card": {
+                "padding": "0"
+              }
+            },
+            ".title-wrapper": {
+              "margin-bottom": "40px",
+              "@media (max-width: 992px)": {
+                "margin-bottom": "20px"
+              },
+              ".mbr-section-title": {
+                "margin-bottom": "0"
+              }
+            },
+            ".google-map": {
+              "iframe": {
+                "height": "500px",
+                "border": "10px solid @border !important",
+                "border-radius": "20px !important",
+                "background-color": "@border !important",
+                "@media (max-width: 992px)": {
+                  "height": "350px"
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#000000",
+              "text-align": "center"
+            }
+          },
+          "_cid": "uIC7yR0XWo",
+          "_anchor": "map01-b",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "footer01",
+          "_sourceTheme": "cargom5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer01 cargom5\" group=\"Footer\" global once=\"footers\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Navigation\" name=\"showNav\" checked>\n        <input type=\"color\" title=\"Border Color\" name=\"border\" value=\"#d2d2d2\" condition=\"showNav\" selected>\n        <input type=\"color\" title=\"Active Color\" name=\"active\" value=\"#ffffff\" condition=\"showNav\" selected>\n        <input type=\"color\" title=\"Active Color\" name=\"activeBg\" value=\"#2c2c26\" condition=\"showNav\" selected>\n        <input type=\"checkbox\" title=\"Copyright\" name=\"showCopy\" checked>\n        <input type=\"color\" title=\"Container BG\" name=\"container\" value=\"#e5e5e5\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/cargom5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#131313\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/cargom5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"card-wrapper\">\n                    <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n                        <b>&nbsp;עוף בגריל בביג</b></h2>\n                    <div class=\"nav-wrapper\" mbr-if=\"showNav\">\n                        <ul class=\"list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".list, .item-wrap, .nav-wrapper\" data-multiline mbr-article>\n                            <li class=\"item-tag\"><a href=\"index.html#contacts01-g\" class=\"text-primary\">צרו קשר</a><br></li><a href=\"index.html#contacts01-g\" class=\"text-primary\">\n                            </a><li class=\"item-tag\"><a href=\"index.html#tabs1-5\" class=\"text-primary\">התפריט שלנו</a><br></li><a href=\"index.html#tabs1-5\" class=\"text-primary\">\n                            </a><li class=\"item-tag\"><a href=\"index.html#header17-f\" class=\"text-primary\">הזמנת משלוח</a><br></li><a href=\"index.html#header17-f\" class=\"text-primary\">\n                            </a><li class=\"item-tag\"><a href=\"index.html#header02-1\" class=\"text-primary\">עוף בגריל בביג</a></li>\n                        </ul>\n                    </div>\n                    <p class=\"mbr-copy mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showCopy\" data-app-selector=\".mbr-copy\" data-app-placeholder=\"Type Text\">האתר נבנה על ידי -עמית שכטר,053-715-5757<br></p>\n                </div>\n<p style=\"font-size: 0.9em; color: #131313;\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "padding": "32px 64px",
+              "background-color": "@container",
+              "@media (max-width: 1440px)": {
+                "padding": "32px"
+              },
+              "@media (max-width: 992px)": {
+                "padding": "24px"
+              },
+              ".mbr-section-title": {
+                "margin-bottom": "32px",
+                "@media (max-width: 992px)": {
+                  "margin-bottom": "24px"
+                }
+              },
+              ".nav-wrapper": {
+                ".list": {
+                  "display": "inline-flex",
+                  "flex-wrap": "wrap",
+                  "justify-content": "center",
+                  "padding": "0",
+                  "margin-bottom": "32px",
+                  "list-style-type": "none",
+                  "@media (max-width: 992px)": {
+                    "margin-bottom": "24px"
+                  },
+                  ".item-tag": {
+                    "display": "inline-flex",
+                    "padding": "10px 32px",
+                    "background-color": "transparent",
+                    "margin": "4px",
+                    "border": "1px solid @border",
+                    "transition": "all 0.3s ease-in-out",
+                    "&:hover, &:focus": {
+                      "background-color": "@activeBg",
+                      "border": "1px solid @activeBg",
+                      "color": "@active"
+                    }
+                  }
+                }
+              },
+              ".mbr-copy": {
+                "margin-bottom": "0"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#2c2c26",
+              "text-align": "center"
+            },
+            ".list, .nav-wrapper": {
+              "color": "#63635d",
+              "text-align": "center"
+            },
+            ".mbr-copy": {
+              "color": "#63635d",
+              "text-align": "center"
+            },
+            "P": {
+              "color": "#131313"
+            }
+          },
+          "_cid": "uJhLvYfB2A",
+          "_anchor": "footer01-e",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
