@@ -1322,7 +1322,7 @@ a {
 }
 .cid-uHjConAlcA .mbr-desc {
   width: 100%;
-  text-align: center;
+  text-align: right;
 }
 .cid-uHjConAlcA .tab-content {
   padding: 2rem 1rem 1rem 1rem;
@@ -1393,16 +1393,19 @@ a {
   top: 0;
 }
 .cid-uHjConAlcA .mbr-text {
-  text-align: center;
+  text-align: right;
 }
 .cid-uHjConAlcA .mbr-price {
-  text-align: center;
+  text-align: right;
 }
 .cid-uHjConAlcA .nav-tabs .nav-link.active {
   color: #ff8b43!important;
 }
 .cid-uHjConAlcA .mbr-price DIV {
   text-align: left;
+}
+.cid-uHjConAlcA .mbr-text DIV {
+  text-align: right;
 }
 .cid-uK1wHzYoKR {
   display: flex;
